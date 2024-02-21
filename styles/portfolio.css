@@ -212,3 +212,59 @@ footer{
     border: 0;
     width: 100%;
 }
+
+@media screen and (max-width: 576px ) {
+    .header{
+        background-image: none;
+    }
+    .banner,
+     nav,
+     nav > ul,
+    .skills-container, 
+    .resume-container, 
+    .about-info-container, 
+    footer{
+        flex-direction: column;
+    }
+
+    nav > ul {
+        gap: 10px;
+    }
+
+    .banner .profile-picture{
+        width: 80%;
+    }
+
+  
+    .banner,
+    #what-i-do-description{
+        padding: 20px;
+    }
+
+    footer, .about{
+        padding: 10px;
+    }
+
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+
+    .Contact input[type="text"], .Contact input[type="email"],
+    textarea{
+    width: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    footer{
+        padding: 10px;
+    }
+
+    nav > ul {
+        gap: 10px;
+    }
+}
